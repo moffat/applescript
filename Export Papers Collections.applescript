@@ -1,7 +1,8 @@
 tell application id "com.mekentosj.papers3"
 	-- returns all (manual & smart) collections as scriptable objects
 	set CollectionList to every collection item
-	set FolderBase to "/Users/cmoffat/Desktop/PapersBib/"
+	-- change the folder below to a folder that exists in your machine
+	set FolderBase to "/Users/USERNAME/Desktop/PapersBib/"
 	
 	repeat with CollectionItem in CollectionList
 		set CollectionName to name of CollectionItem
